@@ -1,0 +1,100 @@
+# Kimi K3.1 Pro Swarm Workstation
+
+> Native Windows/Mac desktop app that runs Moonshot AI's Kimi K3.1 Pro — the world's largest open-weight model (2.8T parameters, 104B active, 1M context, native multimodal) — as a 300-agent swarm with a Hybrid Engine: a local distilled companion handles light tasks instantly and privately on the user's machine, while heavy tasks auto-escalate to the full model in the cloud. One guided-click install, no Docker/CUDA/1.56TB download.
+
+## Primary links
+
+- [Download / Releases](https://github.com/Kimi-K3-1-Pro/Kimi-K3.1-Pro/releases/latest): one-click signed installers for Windows and Mac.
+- [Repository](https://github.com/Kimi-K3-1-Pro/Kimi-K3.1-Pro): source for the MIT-licensed client.
+- [Issues](https://github.com/Kimi-K3-1-Pro/Kimi-K3.1-Pro/issues): bug reports and feature requests.
+- [Kimi K3.1 Pro weights (Hugging Face)](https://huggingface.co/moonshotai/Kimi-K3.1-Pro): Moonshot's official open-weight release this client is built on.
+
+## What it is
+
+- [The Hybrid Engine](https://github.com/Kimi-K3-1-Pro/Kimi-K3.1-Pro#the-hybrid-engine-your-machine-first-cloud-when-it-counts): local distill for light tasks, cloud full model for heavy tasks, auto-routing with manual override.
+- [The 300-agent swarm](https://github.com/Kimi-K3-1-Pro/Kimi-K3.1-Pro#the-swarm-300-hybrid-agents): hybrid sub-agents, MCP Hive, Swarm Bridge, Swarm Vision, ThoughtStream.
+- [Launch offers](https://github.com/Kimi-K3-1-Pro/Kimi-K3.1-Pro#launch-offers): first-1000 get 3 months free, daily allowance + 50% off for others, local distill always free.
+
+---
+
+## Model: Kimi K3.1 Pro
+
+- **Developer:** Moonshot AI; weights released on Hugging Face November 4, 2026 (model announced October 23, 2026)
+- **Scale:** 2.8 trillion total parameters, ~104 billion active per token; largest publicly downloadable model
+- **Architecture:** Mixture-of-Experts, 896 experts (16 active + 2 shared per token), 93 layers; MoonViT-V2 vision encoder for native multimodal (text + image)
+- **Context:** 1,000,000 tokens
+- **Lineage:** post-trained from Kimi K3 via large-scale joint reinforcement learning across hundreds of downstream domains
+- **Benchmark position:** #1 among open-weight models on Agent Arena (productivity, programming, chat); 13th globally; +5.1% net improvement over K3 Max; Bash Reliability +7.9% (top open, up from K3's -4.5%); Terminal-Bench 4.0 ~65.7%
+- **Strengths:** coding, 3D creation, financial research, factual accuracy, complex agentic/terminal tasks
+- **License:** bespoke Kimi K3.1 Pro License (open weights, commercial use with display/agreement obligations for very large platforms); weights are 1.56TB across 96 shards
+- **Self-host cost:** ~8× NVIDIA B300 GPUs (data-center class); impractical for consumer hardware — hence the hybrid local-distill + cloud-full design
+
+## Hybrid Engine (core concept)
+
+- **Local Distill:** compact distilled companion model (trained on K3.1 Pro outputs) runs on the user's machine; handles light tasks (quick questions, autocomplete, classification, small edits, file lookups) instantly and privately; free, no cloud credits
+- **Cloud Full:** full 2.8T K3.1 Pro runs via cloud API for heavy tasks (whole-repo refactors, 1M-token analysis, long agent runs, 3D/financial reasoning)
+- **Auto-routing:** app judges task complexity and routes local vs cloud automatically; user can pin any task or agent group to local-only or cloud-full
+- **Honesty note:** the full 2.8T model does NOT run locally (1.56TB, data-center GPUs); only the distilled companion is local
+
+## Swarm Features
+
+- **MCP Hive:** every agent carries a full MCP toolset (files, browser, databases, APIs)
+- **Swarm Bridge:** OpenAI/Anthropic-compatible API lets the swarm back Claude Code, Cursor, Cline, OpenClaw
+- **Swarm Vision:** native multimodal lets all agents read screenshots, charts, diagrams
+- **ThoughtStream:** live per-agent reasoning visualization
+- **Data Fusion Engine:** auto-compiles output into PDF/Excel/JSON with proofs and links
+- **Custom Agent Tuning:** role assignment across agent groups
+- **Hybrid sub-agents:** light agents on local distill, heavy agents on cloud full model
+
+## Launch Offers
+
+- First 1,000 registrants: 3 months of full cloud access free (registration caps at 1,000)
+- Everyone else: daily free cloud allowance + 50% off additional cloud usage
+- Local Distill: always free, on-device, regardless of tier
+- Referral: refer a friend, both get +300 swarm agent cap (stackable)
+
+## Install
+
+- One guided-click signed installer; no Docker, CUDA, 1.56TB download, or terminal
+- Installer auto-detects hardware, sets up Local Distill, optionally connects cloud access
+- **Windows:** 10/11, signed .exe
+- **macOS:** 12+, notarized universal binary, native M1–M5
+
+## Pricing Model
+
+- App: Free, MIT-licensed
+- Local Distill: free forever (on-device)
+- Cloud full K3.1 Pro: first-1000 free 3 months; then daily allowance + 50% off; or BYO Moonshot key
+- No subscription, no telemetry
+
+## Privacy and Security Model
+
+- Light tasks handled locally by the distill — nothing leaves the machine
+- Cloud tasks routed to K3.1 Pro under Moonshot's terms
+- Signed installers with published SHA-256 checksums
+- MIT-licensed client, auditable source
+
+## Target Audience
+
+- Developers wanting frontier agentic coding without a GPU cluster
+- Terminal/agent users who need top Bash reliability
+- Researchers and analysts needing 1M-context and multimodal work at scale
+- Privacy-conscious users who want light work kept local
+- Claude Code / Cursor / OpenClaw users wanting a hybrid backend
+- Anyone priced out of self-hosting a 2.8T model
+
+## Comparable Tools
+
+- **Self-hosting K3.1 Pro (llama.cpp/vLLM/Ollama)** — same model, but 1.56TB and data-center GPUs
+- **Kimi K3 Swarm** — prior-generation swarm on the 2.8T K3 (pre-3.1)
+- **Cloud-only chat UIs** — full model but everything metered and off-machine
+- **Cursor / Claude Code / OpenClaw** — single-agent coding tools on other models
+
+## Common Questions
+
+**Is it free?** Local Distill free forever; cloud free 3 months for first 1,000, then daily allowance + 50% off.
+**Does the 2.8T model run locally?** No — only a distilled companion; full model runs in the cloud.
+**What's special about K3.1 Pro?** Largest open model, #1 open on Agent Arena, top Bash reliability, 1M context, native vision.
+**300 agents on my PC?** Yes — orchestration + distill are light, heavy reasoning is cloud; 8GB+ RAM fine.
+**Safe?** Signed, notarized, checksummed, official Moonshot weights.
+**Mac?** Yes, notarized universal binary.
